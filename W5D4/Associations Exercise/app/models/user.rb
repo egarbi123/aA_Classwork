@@ -13,10 +13,13 @@ class User < ApplicationRecord
     primary_key: :id,
     foreign_key: :student_id,
     class_name: :Enrollment
+    
+  has_many :instructors,
+    through: :enrolled_courses,
+    source: :instructor
 
   has_many :enrolled_courses,
-    primary_key: :id,
-    foreign_key: :course_id,
-    class_name: :Course
-
+    through: :enrollments,
+    source: :course
+    
 end
