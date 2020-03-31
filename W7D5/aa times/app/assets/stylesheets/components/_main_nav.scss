@@ -1,0 +1,39 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 2px solid lightgray;
+}
+
+.left-nav>ul,
+.right-nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav>ul>li {
+    padding: 3px;
+}
+
+.right-nav>ul>li {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.right-nav>ul>li:last-of-type {
+    font-size: 20px;
+}
+
+.left-nav>ul>li:hover,
+.right-nav>ul>li:last-of-type:hover {
+    background-color: $lightest-gray;
+    border-radius: 3px;
+}
+
+.left-nav span {
+    font-size: 16px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.right-nav i {}

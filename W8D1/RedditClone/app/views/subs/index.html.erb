@@ -1,0 +1,14 @@
+<h1>All subs</h1>
+
+<ul>
+    <% @subs.each do |sub| %>
+        <li>
+            <label>Title 
+                <p> <%= sub.title %> </p>
+            </label>
+            <label>Description 
+                <p> <%= sub.description %> </p>
+            </label>
+        </li>
+    <% end %>
+</ul>
